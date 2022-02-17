@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  height: 100vh;
+  background-color: hsl(226, 43%, 10%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  align-content: center;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: minmax(auto, 1fr) minmax(auto, 1fr) minmax(auto, 1fr) minmax(auto, 1fr);
+  grid-template-rows: 250px 250px;
+}
+
+.avatar {
+  grid-row: 1 / -1;
+  background-color: #1d204b;
+  border-radius: 10px;
+  width: 250px;
+  position: relative;
+}
+
+.avatar img {
+  height: 75px;
+  top: 30px;
+  left: 30px;
+  position: relative;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.top-container {
+  height: 350px;
+  background-color: #5746ea;
+  border-radius: 10px;
+}
+
+.top-container h5 {
+  font-weight: 400;
+}
+
+.top-container h1 {
+  font-weight: 300;
+}
+
+.name-container {
+  position: relative;
+  left: 30px;
+  top: 30%;
+}
+
+.schedule-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 150px;
+}
+
+.schedule-container h6 {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 0;
+  position: relative;
+  left: 30px;
+  top: 10%;
+}
+.schedule-container .daily,
+.schedule-container .weekly,
+.schedule-container .monthly {
+  color: hsl(235, 45%, 61%);
+}
+
+#weekly {
+  color: white;
+}
+
+.schedule-container h6:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.box-top-1,
+.box-top-2,
+.box-top-3,
+.box-top-4,
+.box-top-5,
+.box-top-6 {
+  background-color: #1d204b;
+  position: relative;
+  top: 50px;
+  height: 201px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.data-container {
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+
+.hours {
+  margin-left: 50px;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.last-week {
+  margin-left: 50px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.name-container > h5 {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.work {
+  background-color: #ff8b64;
+  border-radius: 11px;
+  background-image: url("./images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.play {
+  background-color: #56c2e6;
+  border-radius: 11px;
+  background-image: url("./images/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.study {
+  background-color: #ff5e7d;
+  border-radius: 11px;
+  background-image: url("./images/icon-study.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.exercise {
+  background-color: #4bcf83;
+  border-radius: 11px;
+  background-image: url("./images/icon-exercise.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.social {
+  background-color: #7235d1;
+  border-radius: 11px;
+  background-image: url("./images/icon-social.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.self-care {
+  background-color: #f1c75b;
+  border-radius: 11px;
+  background-image: url("./images/icon-self-care.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.box-top-1:hover {
+  background-color: #34397b;
+  cursor: pointer;
+}
+.box-top-2:hover {
+  background-color: #34397b;
+  cursor: pointer;
+}
+.box-top-3:hover {
+  background-color: #34397b;
+  cursor: pointer;
+}
+.box-top-4:hover {
+  background-color: #34397b;
+  cursor: pointer;
+}
+.box-top-5:hover {
+  background-color: #34397b;
+  cursor: pointer;
+}
+.box-top-6:hover {
+  background-color: #34397b;
+  cursor: pointer;
+}
+
+.dots {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* responsive */
+@media screen and (max-width: 900px) {
+  .container {
+    width: 300px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .schedule-container {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-around;
+  }
+
+  .schedule-container h6 {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(235, 45%, 61%);
+    left: 0px;
+  }
+
+  .top-container {
+    height: 150px;
+    display: flex;
+  }
+
+  .name-container {
+    position: relative;
+    left: 40px;
+    top: 20%;
+  }
+
+  .top-container h1 {
+    font-size: 20px;
+  }
+
+  .avatar {
+    grid-row: 1;
+    width: auto;
+    height: auto;
+    top: 230px;
+  }
+
+  .box-top-1,
+  .box-top-2,
+  .box-top-3,
+  .box-top-4,
+  .box-top-5,
+  .box-top-6 {
+    height: 100px;
+  }
+
+  .box {
+    margin-top: 40px;
+    position: relative;
+    top: 200px;
+  }
+}
