@@ -18,7 +18,7 @@ and the paragraphs above when you add your screenshot. If you prefer not to add 
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://lucid-austin-d802ba.netlify.app/)
 
 ## My process
 
@@ -30,18 +30,4 @@ and the paragraphs above when you add your screenshot. If you prefer not to add 
 - CSS Grid
 - Vanila JS
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
