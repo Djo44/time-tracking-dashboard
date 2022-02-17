@@ -18,7 +18,7 @@ and the paragraphs above when you add your screenshot. If you prefer not to add 
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://lucid-austin-d802ba.netlify.app/)
+- Live Site URL: [live site URL](https://lucid-austin-d802ba.netlify.app/)
 
 ## My process
 
